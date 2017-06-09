@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--    <link href="styles.css" rel="stylesheet" type="text/css">-->
+    <style>
+         body, a{
+            background: black;
+            color: white;
+        }
+        
+        #s {
+            color: gray;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        strong {
+            color: burlywood;
+        }
+
+       
+
+        nav a {
+            color: chocolate;
+        }
+
+        .head1 {
+            margin-top: 10px;
+            color: chocolate;
+            font-size: 20px;
+        }
+
+        #sharath {
+            margin-top: 60px;
+        }
+
+        dt {
+            color: sandybrown;
+        }
+
+        #wire {
+            text-align: center;
+            white-space: nowrap;
+            position: absolute;
+            padding: 0;
+            width: 100%;
+            top: -80px;
+            border-bottom: 3px solid #222;
+            height: 100px;
+        }
+
+        #wire li {
+            position: relative;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 15px;
+            height: 30px;
+            border-radius: 50%;
+            margin: 0px 15px;
+            top: 102px;
+            display: inline-block;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-name: even-flash;
+        }
+
+        #wire li:nth-child(odd) {
+            animation-name: odd-flash;
+        }
+
+        #wire li:before {
+            content: "";
+            position: absolute;
+            width: 14px;
+            height: 10px;
+            border-radius: 4px;
+            top: -5px;
+            left: 0px;
+            background: #444;
+        }
+
+        @keyframes even-flash {
+            0%,
+            100% {
+                background: rgba(255, 230, 65, 1);
+                box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
+            }
+            50% {
+                background: rgba(255, 230, 65, 0.5);
+                box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
+            }
+        }
+
+        @keyframes odd-flash {
+            50% {
+                background: rgba(255, 65, 185, 1);
+                box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
+            }
+            0%,
+            100% {
+                background: rgba(255, 65, 185, 0.5);
+                box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <ul id="wire">
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+            <li></li>            <li></li>            <li></li>            <li></li>
+        </ul>
+    </div>
+    <div class="container">
+        <br>
+        <h2 id="sharath" style='color:chocolate;font-family:sans-serif'> Sharath Kumar <span id="s"> SoftwareDeveloper</span></h2>
+        <hr size="100">
+
+        <blockquote class="blockquote" style="font-size:16px;font-family:sans-serif"> OBJECTIVE : To effectively utilize my skills and qualifications to contribute significantly to an organization where I can pursue and upgrade technology oriented career, as well as long-term growth through relentless pursuit of learning and perfection. </blockquote>
+        <hr>
+
+        <div class="container">
+<!--
+            <h4 id="Education" class='text-center head1'>EDUCATION</h4>
+        
+            <dl>
+                <dt style='color:burlywood'> Bachelor of Technology in Information Technology</dt>
+                <dd>J.B. Institute of Engineering and Technology (JBIET), Hyderabad, India. GPA: 3.5/4.00 </dd>
+            </dl>
+            
+-->
+            <hr>
+            <h4 id="Tech-skills" class='text-center head1'>TECHNICAL SKILLS</h4>
+
+            <div class="row">
+                <div class="col-md-4"><strong> Programming Languages:</strong></div>
+                <div class="col-md-8">Core Java, C, C++, J2EE, Swift</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4"><strong>Databases:</strong></div>
+                <div class="col-md-8">MySQL, Oracle, MongoDB, PostGreSQL</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4"><strong>Web Technologies:</strong></div>
+                <div class="col-md-8">HTML5, CSS3, JSP, JSTL, XML, JavaScript, JQuery, Ajax </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4"><strong> JavaScript Frameworks:</strong></div>
+                <div class="col-md-8">  Angular JS, Node JS, Express JS, React JS, Angular 2</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-4"><strong>Operating Systems:</strong></div>
+                <div class="col-md-8">Windows family, Linux (Ubuntu), Mac</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><strong>Tools and Frameworks:</strong></div>
+                <div class="col-md-8"> Net Beans, Eclipse, Android Studio, Visual Studio, Bootstrap, Git</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4"><strong>Other Application:</strong></div>
+                <div class="col-md-8"> MS Office, Google tools and apps, Tableau, Adobe Photoshop</div>
+            </div>
+
+
+            <hr>
+
+
+
+            <h4 id="Projects" class='text-center head1'>PROJECTS</h4>
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                <a class="nav-link active" href="#project1" data-toggle="tab"> Project 6 </a>
+                <a class="nav-link" href="#project2" data-toggle="tab"> Project 5 </a>
+                <a class="nav-link" href="#project3" data-toggle="tab"> Project 4 </a>
+                <a class="nav-link" href="#project4" data-toggle="tab"> Project 3 </a>
+                <a class="nav-link" href="#project5" data-toggle="tab"> Project 2 </a>
+                <a class="nav-link" href="#project6" data-toggle="tab"> Project 1 </a>
+            </nav>
+            <div class="tab-content py-3">
+                <div class="tab-pane active" id="project1">
+                    
+                    <dl> <dt> Tesoro, San Antonio, Tx <span style="float:right">Apr 15 – May 2017</span> <br>
+                            Role: Sr. Full Stack Consultant </dt>
+                        <dd>
+                            <br>    
+                                <ul>
+                                    <li>Involved in the analysis, design, and development and testing phases of Software resulting in multiple stable releases and more efficient systems.</li>
+                                    <li>Developed Dynamic and robust UI using <strong>Angular 2, React JS, HTML, CSS, SASS,</strong> <strong>JavaScript</strong>, <strong>JQuery</strong> by connecting backend API&rsquo;s with <strong>JSON</strong>.</li>
+                                    <li>Used <strong>Node&nbsp;JS, Express&nbsp;JS</strong>, and Mongo DB along with <strong>Mongoose</strong>&nbsp;to create server side applications.</li>
+                                    <li>Designed and documented <strong>REST/</strong>HTTP APIs<strong>,</strong> including JSON data formats and API versioning strategy.</li>
+                                    <li>Designed and coded customized <strong>Angular 2</strong> services to interact with the backend API and server components.</li>
+                                    <li>Used <strong>GIT</strong> for version control. Improved the <strong>Page Performance</strong> drastically.</li>
+                                    <li>Developed Restful-based web services and used <strong>JSON</strong> as the communication for REST mechanism.</li>
+                                    <li>Coded <strong>Typescript</strong> and <strong>ES6</strong> supersets, mastered Docker deployment in Cloud machine instances</li>
+                                    <li>Developed &amp; Consumed <strong>RESTful Web Services.</strong></li>
+                                    <li>Improved the Performance, Availability of an Application&rsquo;s Database by using NoSQL Database such as <strong>Mongo DB</strong>.</li>
+                                    <li>Deployed applications in the cloud using AWS, regulated traffic and other services using multiple AWS services.</li>
+                                    <li>Successfully handled <strong>cross-browser compatibility</strong> in different browsers like Safari, Internet Explorer, Firefox and Chrome.</li>
+                                    <li>Wrote unit test cases for the JavaScript code using <strong>Karma</strong> &amp; the automated the application using the protractor e2e test as a part of test driven development.</li>
+                                    <li>Extensively used <strong>Angular 2</strong> and UI components.</li>
+                                    <li>Responsible for designing <strong>SPA </strong>with using Angular JS as a framework along with HTML and CSS.</li>
+                                    <li>Used <strong>Bootstrap </strong>along with HTML5and CSS3to make the user pages more <strong>interactive </strong>and <strong>responsive.</strong></li>
+                                    <li>Used <strong>Karma </strong>and <strong>Jasmine </strong>for automated tests along with using <strong>Gulp </strong>and <strong>Bower </strong>for automated tasks.</li>
+                                    <li>Achieved client side scripting which helps reduce server side trips and thus helps in the <strong>performance boost.</strong></li>
+                                </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="tab-pane" id="project2">
+                    <!--                <h5> Project 2</h5>-->
+                    <dl> <dt> Photo Voltaic Testing Laboratory, AZ  <span style="float:right"> June 14 – Apr 15 </span>
+                        <br>
+                            Role: Full Stack Developer </dt>
+                        <dd>
+                           <br>
+                            <ul>
+                                <li>Worked with the project manager,<strong>&nbsp;Developers,&nbsp;</strong>and<strong>&nbsp;QA engineers</strong>&nbsp;to see projects through full development lifecycles.</li>
+                                <li>Involved in development of User Interface using&nbsp;<strong>HTML, CSS, JavaScript, jQuery, AJAX, JSON, React JS, Backbone JS.</strong></li>
+                                <li>Created package.json for&nbsp;<strong>Bower</strong>&nbsp;and&nbsp;<strong>NPM</strong>. Extensive experience using&nbsp;<strong>Bootstrap</strong>&nbsp;for layout.</li>
+                                <li>Involved in writing application level code to interact with APIs, Web Services using&nbsp;<strong>AJAX, JSON, and XML.</strong></li>
+                                <li>Developed Presentation layer with Struts,&nbsp;<strong>JSTL, JSP,&nbsp;</strong>and&nbsp;<strong>Tiles</strong>. Enabled interaction with&nbsp;<strong>Flash, JSP and Tag Libraries</strong></li>
+                                <li>Used&nbsp;<strong>LESS</strong>&nbsp;preprocessor for developing personal sites. Developed the pages that are compliant with the W3C standard.</li>
+                                <li>Developed client web applications by using&nbsp;<strong>React JS&nbsp;</strong>and Debugged JavaScript using Chrome Developer Toolbar, Firebug.</li>
+                                <li>Developed the UI with extensive use of&nbsp;<strong>JavaScript,&nbsp;</strong>JSON, and Ajax.&nbsp;<strong>JSTest</strong>&nbsp;is used for Unit Testing of application.</li>
+                                <li>Used&nbsp;<strong>AJAX&nbsp;</strong>extensively to implement front end /user interface features in the application.</li>
+                                <li>Used&nbsp;<strong>Backbone.js</strong>&nbsp;for the functionality and structure. Developed core component of Analytics with&nbsp;<strong>Node.js</strong>,&nbsp;<strong>Angular.js,&nbsp;</strong>Backbone.js.</li>
+                                <li>Version control through&nbsp;<strong>CVS</strong>. Developed web pages using Eclipse IDE. Used JBoss&nbsp;<strong>Webserver</strong>.</li>
+                                <li>Developed&nbsp;<strong>Hibernate</strong>&nbsp;with&nbsp;<strong>Spring</strong>&nbsp;Integration as the data abstraction to interact with the database.</li>
+                                <li>Worked on creating a responsive website for smart devices (Laptop, tablet) using Responsive design and media queries.</li>
+                                <li>Worked on Data mining concepts and database management using&nbsp;<strong>Apache Kafka</strong>&nbsp;and Kafka&nbsp;API&rsquo;s&nbsp;for stream processing and stream computing.</li>
+                                <li>Designed and developed the web-tier using&nbsp;<strong>HTML, JSP&rsquo;s, Servlets</strong>&nbsp;and&nbsp;<strong>Tiles</strong>&nbsp;framework.</li>
+                                <li>Used Http compression and AJAX for&nbsp;<strong>faster response time</strong>, used&nbsp;<strong>Maven</strong>&nbsp;for build automation.</li>
+                                <li>Participated and drove SOA governance, implemented Web services by applying SOA concepts in conjunction with SOAP.</li>
+                                <li>Deployed the application on to WebSphere application server 5.0,&nbsp;<strong>Apache Tomcat</strong>&nbsp;server in Linux environment</li>
+                                <li>Experienced in using&nbsp;<strong>Modernizr</strong>&nbsp;to check cross-browser compatibility, making sure that the&nbsp;<strong>HTML</strong>&nbsp;and&nbsp;<strong>CSS</strong>&nbsp;features are working properly.</li>
+                            </ul>
+</dd>
+                    </dl>
+                </div>
+                <div class="tab-pane" id="project3">
+                    
+                    <dl> <dt> Fred Loya Insurance, Dallas, TX <span style="float:right"> Dec 13 - May 14 </span>
+                        <br>
+                            Role: Full Stack/UI Developer </dt>
+                        <dd>
+                            <br>
+                            <ul>
+                                <li>Worked in all phases of <strong>SDLC</strong>, including requirements analysis, design and development, bug fixing, supporting QA teams and debugging production issues.</li>
+                                <li><strong>MEAN</strong> stack implementation, <strong>AngularJS Full-Stack generator</strong> (generator-angular-full stack), and actually run, edit, and deploy an application.</li>
+                                <li>Custom <strong>Node JS</strong> proxy used to simulate API responses before client implementation was complete, and to proxy requests to finished client <strong>APIs</strong>, handling authentication, custom headers, virtual application root, etc.</li>
+                                <li>Design and implementation of <strong>REST APIs</strong> for collection and retrieval of high volume data.</li>
+                                <li>Worked on tools <strong>Bower, Grunt, Jasmine, Karma, Protractor</strong></li>
+                                <li>Implementation includes <strong>data retrieval</strong> from database and displaying it on a web UI.</li>
+                                <li>Rapidly <strong>designed &amp; built object-oriented, data-driven JavaScript</strong> working prototypes of applications. Implemented performance best practices to a web site.</li>
+                                <li>Created&nbsp;<strong>Angular custom services, custom filters </strong>and used various <strong>angular services like </strong>$rootScope, <strong>$modal</strong>, $location, $q, <strong>geolocation Service</strong>, $filter, role Access Service as dependency injections in the controller.</li>
+                                <li>Created different Carousels using <strong>jQuery</strong> Carousel, and Accordions with the help of jQuery UI.</li>
+                                <li>Used <strong>Node JS</strong> to link-up with the server and all the Data-driven events, making Ajax calls are handled using <strong>Angular JS</strong>.</li>
+                                <li>Implemented responsive web design using media queries and <strong>Bootstrap</strong>.</li>
+                                <li>Worked with Java consultants to create web services that are consumed by HTML web pages using <strong>Grunt</strong>, <strong>Gulp</strong> and <strong>Bower</strong>.</li>
+                                <li>Create web pages based on <strong>wireframes</strong>. Collaborated with the designers to get new requirements.</li>
+                                <li>Coordinating the <strong>offshore team</strong> for coding and performing testing. Used Subversion <strong>SVN for CVS.</strong></li>
+                                <li>Involved in preparation of test cases for <strong>unit</strong> &amp; <strong>integration</strong> testing and <strong>User acceptance testing</strong>.</li>
+                                <li>Used <strong>Grunt</strong> as the automated task runner for a better development/build/production workflow.</li>
+                                <li>Tested web sites and fixed any existing bugs using Firebug.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="tab-pane" id="project4">
+                    <!--                <h5> Project 4</h5>-->
+                    <dl> <dt> Ford-South Boston, VA <span style="float:right"> Oct 12 – Dec 13 </span><br>
+                            Role: Full Stack Consultant </dt>
+                        <dd>
+                            <br>
+                                <ul>
+                                    <li>Used LDAP protocol for security and authentication purposes and Web Sphere Application Server for deploying application</li>
+                                    <li>Used Bootstrap for responsive web design, also used HTML5 and CSS3, JQUERY, Angular JS for better UI and UX</li>
+                                    <li>Achieved client side scripting which helps reduce server side trips and thus helps in <strong>performance boost</strong></li>
+                                    <li>Used caching and server-side scripting for efficient processing and <strong>minimizing response delay</strong> for database operations</li>
+                                    <li>Worked in <strong>Node JS</strong> and <strong>Express JS</strong> to enable communication between server and client through REST API&rsquo;s, mastered <strong>MVC</strong> design pattern for web applications by working on several projects</li>
+                                    <li>Used multiple tools such as Bower, <strong>Homebrew</strong>, Gulp, <strong>Docker</strong>, Karma, Jasmine, <strong>Chai</strong> for testing and automation purposes</li>
+                                    <li>Designed and hand coded Angular app for single paged application, Used REST for backend API communication</li>
+                                    <li>Worked on multiple <strong>CMS</strong>, involved in coding and deploying application which handles huge amount of customer&rsquo;s data</li>
+                                    <li>Improved the <strong>SQL </strong><strong>Query</strong><strong>Performance</strong> by doing Query Analytics, implementing Indexes, fine-tuning it etc.</li>
+                                    <li>Designed <strong>SOAP</strong> API&rsquo;s and <strong>RESTful </strong>API&rsquo;s for communication between multiple applications, along with AJAX, JQUERY and CSS for better user experience.</li>
+                                    <li><strong>MongoDB</strong> geolocation API leveraged for user proximity lookups.</li>
+                                    <li>Wrote SQL procedures and functions used for <strong>LAMP</strong> stack applications</li>
+                                    <li>Worked on <strong>PHP</strong> language for creating dynamic web applications, followed best industrial practices</li>
+                                    <li>As a backend developer, I was responsible for creating <strong>RESTFUL Web Services</strong> using <strong>Node.js &amp; Express.js</strong></li>
+                                    <li>Applied optimization techniques to <strong>reduce page size</strong> and <strong>load times</strong> to enhance user experience using sprites.</li>
+                                    <li>Extensively used <strong>Git</strong> for version controlling and regularly pushed the code to <strong>GitHub</strong>.</li>
+                                    <li>Design and write code in <strong>Spring</strong> <strong>MVC</strong> to replace EJB transactions</li>
+                                    <li>Well-equipped with knowledge of CSS preprocessors like <strong>LESS</strong> and <strong>SASS</strong></li>
+                                    <li>Implemented intranet applications using Ruby on Rails and <strong>ngreSql</strong> on <strong>Heroku</strong> Cloud Packages and Triggers in Oracle</li>
+                                </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="tab-pane" id="project5">
+                    <!--                <h5> Project 5</h5>-->
+                    <dl> <dt> Apollo Hospitals, India
+                        <span style="float:right"> May 10 – Sep 12 </span> <br>
+                            Role: UI/Java Developer </dt>
+                        <dd>
+                            <br>
+                            <ul>
+                                <li>Development of user interface using and dynamic web pages using <strong>PHP&nbsp;JSP</strong>, HTML, CSS&nbsp;and&nbsp;JavaScript</li>
+                                <li>Hands-on experience in working with XML related technologies such as XML Schema, <strong>XSL</strong>, and <strong>XSLT</strong></li>
+                                <li>Wrote and deployed Servlets on Application servers such as <strong>Websphere</strong>, <strong>Tomcat</strong> and <strong>Weblogic</strong></li>
+                                <li>Responsible for user validations, Authentication on client side and server side</li>
+                                <li>Development of the Java classes to be used in&nbsp;<strong>JSP</strong>&nbsp;and&nbsp;<strong>Servlets</strong></li>
+                                <li>Used&nbsp;Hibernate&nbsp;for persistence to&nbsp;Oracle&nbsp;Database</li>
+                                <li>Improved the coding standards, code reuse. Increased performance of the extended applications by making effective use of various design patterns such as Front Controller, DAO</li>
+                                <li>Wrote with&nbsp;PL/SQL&nbsp;procedures, created, maintained and updated databases.</li>
+                                <li>Used&nbsp;<strong>JDBC</strong>&nbsp;to retrieve data from Oracle database, and created API&rsquo;s to utilize data and send them across multiple services</li>
+                                <li>Developed build scripts using&nbsp;<strong>Ant</strong>, used GIT and <strong>Subversion</strong> for version control</li>
+                                <li>Tested frontend code in multiple browsers to ensure the <strong>cross-browser</strong> compatibility.</li>
+                                <li>Used&nbsp;Test Driven Development&nbsp;approach, and wrote many unit and integration test cases</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="tab-pane" id="project6">
+                    <dl> <dt> HCL Technologies Ltd, IN <span style="float:right"> Jun 09 – May 10 </span>
+                        <br>
+                            Role: Jr Java Developer </dt>
+                        <dd>
+                            <br>
+                            <ul>
+                                <li>Assisted colleague in various phases of Software Development Life Cycle (SDLC) such as requirement gathering, modeling, analysis, architecture design &amp; development</li>
+                                <li>Gathered the <strong>business requirements</strong> to capture the user needs. Created <strong>Estimate Plan, LLD</strong> and <strong>HLD</strong>.</li>
+                                <li>Worked with a team of front end developers to build UI design concepts and prototypes.</li>
+                                <li>Worked on different software development methodologies such as Agile and Waterfall model</li>
+                                <li>Implemented applications using struts Framework which is based on Model View Controller design pattern for clean separation of logic from the presentation layer and View Layer</li>
+                                <li>Developed UI and User experience using JSPs, JSP, <strong>JSP Tag libraries</strong>, CSS and HTML and numerous other frameworks</li>
+                                <li>Created interactive webpages and services using JQuery and JavaScript and other languages</li>
+                                <li>Wrote complex queries, stored procedures on MY SQL, PL/SQL and Oracle to perform advanced database operations.</li>
+                                <li>Worked on Designing, hoisting and maintaining websites and services from scratch in <strong>LINUX</strong> environment</li>
+                                <li>Created tables required for the project in Oracle 10g database, used Toad tool to connect and work on the database</li>
+                                <li>Deployed on <strong>JBOSS</strong>, monitored the error logs using Log4J and fixed the problems</li>
+                                <li>Created and performed test plans and test operations on various web services and applications.</li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer my-5 py-3" style="display:block;border:solid lightgrey 1px;padding:15px">
+            <div class="row">
+                <div class="col-md-4"> Mobile Number :
+                    <number> (+1) 210-920-4308 </number>
+                </div>
+                <div class="col-md-4"> Email :
+                    <email> sharath.java10@gmail.com </email>
+                </div>
+                <div class="col-md-4"><a href="https://www.linkedin.com/in/">LinkedIn</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+
+</html>
