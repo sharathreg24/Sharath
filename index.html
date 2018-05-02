@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <!--    <link href="styles.css" rel="stylesheet" type="text/css">-->
     <style>
          body, a{
@@ -120,7 +122,38 @@
                 box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
             }
         }
+        
+        .fa {
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
 
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+        
+        .social-media{
+            position: fixed;
+            right: 20px;
+            top: 50%;
+        }
+        .social-row{
+            padding: 20px;
+        }
+        /* Facebook */
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
     </style>
 </head>
 
@@ -140,6 +173,14 @@
     </div>
     <div class="container">
         <br>
+        <div class="social-media">
+            <div class="row social-row">
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+            <div class="row social-row">
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </div>
         <div class="row" id="sharath">
             <div class="col-lg-8 col-md-6 col-sm-12">
                 <h2 style='color:chocolate;font-family:sans-serif;'> Sharath Kumar <span id="s"> 
@@ -238,7 +279,7 @@
                 <a class="nav-link" href="#project7" data-toggle="tab"> Project 1 </a>
             </nav>
             <div class="tab-content py-3">
-                <div class="tab-pane" id="project1">
+                <div class="tab-pane active" id="project1">
                     <dl> <dt> Dell EMC, Round Rock, TX <span style="float:right"> Jun 17 – present </span>
                         <br>
                             Role: Full Stack Developer </dt>
@@ -271,7 +312,7 @@
                         </dd>
                     </dl>
                 </div>
-                <div class="tab-pane active" id="project2">
+                <div class="tab-pane" id="project2">
                     
                     <dl> <dt> Tesoro, San Antonio, Tx <span style="float:right">Apr 15 – May 2017</span> <br>
                             Role: Sr. Full Stack Consultant </dt>
