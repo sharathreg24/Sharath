@@ -26,8 +26,9 @@
         </div>
         <div class="row" id="sharath">
             <div class="col-lg-8 col-md-6 col-sm-12">
-                <h2 style='color:chocolate;font-family:sans-serif;'> Sharath Kumar <span id="s">
-                        Full Stack Developer</span></h2>
+                <h2 style='color:chocolate;font-family:sans-serif;'> Sharath Kumar </h2>
+                <div id="s">
+                    Full Stack Developer</div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12">
                 <button type="button" class="btn btn-info btn-md float-right" data-toggle="modal"
@@ -41,7 +42,7 @@
                         <h3 class="modal-title">Thank You</h3>
                         <button class="close" data-dismiss="modal">&times;</button>
                     </div>
-                    <div class="modal-body"> You have made the right choice !! </div>
+                    <div class="modal-body"> You have made the right choice! </div>
                     <div class="modal-footer">
                         <a style='background: none' href="mailto:sharath.java10@gmail.com"><button
                                 class="btn btn-primary" style="border-radius: 5px">Send Me Email</button></a>
@@ -72,7 +73,7 @@
             <dl>
                 <dt style='color:burlywood'> Bachelor of Technology in Information Technology<span
                         style="float:right">2016</span></dt>
-                <dd>J.B. Institute of Engineering and Technology (JBIET), Hyderabad, India.<span
+                <dd>J.B. Institute of Engineering and Technology (JBIT), Hyderabad, India.<span
                         style="float:right">GPA: 3.50/4.00</span> </dd>
             </dl>
 
@@ -328,7 +329,7 @@
                 </div>
             </div>
 
-            <div class="footer my-5 py-3" style="display:block;border:solid lightgrey 1px;padding:15px">
+            <div class="footer my-3 py-3" style="display:block;border:solid lightgrey 1px;padding:15px">
                 <div class="row">
                     <div class="col-md-4"> Mobile Number :
                         <number> (+1) 210-920-4308 </number>
@@ -340,37 +341,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            function updateList() {
-                const list = document.getElementById("wire");
-                const windowWidth = window.innerWidth;
-                let numberOfItems;
-
-                if (windowWidth < 480) {
-                    numberOfItems = 8;
-                } else if (windowWidth < 768) {
-                    numberOfItems = 16;
-                } else if (windowWidth < 992) {
-                    numberOfItems = 24;
-                } else {
-                    numberOfItems = 32;
-                }
-
-                // Clear the existing list
-                list.innerHTML = "";
-
-                // Create and append the list items dynamically
-                for (let i = 1; i <= numberOfItems; i++) {
-                    const li = document.createElement("li");
-                    // li.textContent = "Item " + i;
-                    list.appendChild(li);
-                }
-            }
-
-            // Call the function on page load and whenever the window is resized
-            window.addEventListener("load", updateList);
-            window.addEventListener("resize", updateList);
-        </script>
+        <script src="assets/js/script.js"></script>
         <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
             integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
             crossorigin="anonymous"></script>

@@ -13,17 +13,9 @@ button,
     color: chocolate;
 }
 
-#s {
-    color: gray;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
 strong {
     color: burlywood;
 }
-
-
 
 nav a {
     color: chocolate;
@@ -160,4 +152,47 @@ dt {
 
 .job-duties {
     padding-left: 1rem;
+}
+
+.modal-body {
+    color: initial;
+}
+
+
+#s {
+    /* Default styles for all form factors */
+    /* background-color: yellow; */
+    color: gray;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0.5rem 0.1rem;
+    display: inline-block;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 767px) {
+    #s {
+        /* Styles for small screens */
+        display: inline;
+        font-size: 20px;
+        margin: 0.1rem 0.1rem;
+    }
+}
+
+/* Media query for medium screens */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #s {
+        /* Styles for medium screens */
+        display: inline;
+        margin: 0.1rem 0.1rem;
+    }
+}
+
+/* Media query for large screens */
+@media screen and (min-width: 1024px) {
+    #s {
+        /* Styles for large screens */
+        display: inline;
+        margin: 0.1rem 0.1rem;
+    }
 }
