@@ -2,223 +2,17 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/user.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!--    <link href="styles.css" rel="stylesheet" type="text/css">-->
-    <style>
-        body,
-        a {
-            background: black;
-            color: white;
-        }
-
-        button,
-        .btn {
-            cursor: pointer;
-        }
-
-        .modal-dialog {
-            color: chocolate;
-        }
-
-        #s {
-            color: gray;
-            font-size: 20px;
-            font-family: sans-serif;
-        }
-
-        strong {
-            color: burlywood;
-        }
-
-
-
-        nav a {
-            color: chocolate;
-        }
-
-        .head1 {
-            margin-top: 10px;
-            color: chocolate;
-            font-size: 20px;
-        }
-
-        #sharath {
-            margin-top: 60px;
-        }
-
-        dt {
-            color: sandybrown;
-        }
-
-        #wire {
-            text-align: center;
-            white-space: nowrap;
-            position: absolute;
-            padding: 0;
-            width: 100%;
-            top: -80px;
-            border-bottom: 3px solid #222;
-            height: 100px;
-        }
-
-        #wire li {
-            position: relative;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: block;
-            width: 15px;
-            height: 30px;
-            border-radius: 50%;
-            margin: 0px 15px;
-            top: 102px;
-            display: inline-block;
-            animation-duration: 1s;
-            animation-fill-mode: both;
-            animation-iteration-count: infinite;
-            animation-name: even-flash;
-        }
-
-        #wire li:nth-child(odd) {
-            animation-name: odd-flash;
-        }
-
-        #wire li:before {
-            content: "";
-            position: absolute;
-            width: 14px;
-            height: 10px;
-            border-radius: 4px;
-            top: -5px;
-            left: 0px;
-            background: #444;
-        }
-
-        @keyframes even-flash {
-
-            0%,
-            100% {
-                background: rgba(255, 230, 65, 1);
-                box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 1);
-            }
-
-            50% {
-                background: rgba(255, 230, 65, 0.5);
-                box-shadow: 0px 2px 20px 4px rgba(255, 230, 65, 0.3);
-            }
-        }
-
-        @keyframes odd-flash {
-            50% {
-                background: rgba(255, 65, 185, 1);
-                box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 1);
-            }
-
-            0%,
-            100% {
-                background: rgba(255, 65, 185, 0.5);
-                box-shadow: 0px 2px 20px 4px rgba(255, 65, 185, 0.3);
-            }
-        }
-
-        .fa {
-            font-size: 30px;
-            width: 50px;
-            text-align: center;
-            text-decoration: none;
-        }
-
-        /* Add a hover effect if you want */
-        .fa:hover {
-            opacity: 0.7;
-        }
-
-        .social-media {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-        }
-
-        .social-row {
-            padding: 20px;
-        }
-
-        /* Facebook */
-        .fa-facebook {
-            background: #3B5998;
-            color: white;
-        }
-
-        /* Twitter */
-        .fa-twitter {
-            background: #55ACEE;
-            color: white;
-        }
-
-        #wire {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        #wire li {
-            display: inline-block;
-            margin-right: 10px;
-        }
-
-        .job-duties{
-            padding-left: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
     <div class="container-fluid">
-        <ul id="wire">
-            <!-- <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li> -->
-        </ul>
+        <ul id="wire"></ul>
     </div>
     <div class="container">
         <br>
@@ -266,15 +60,23 @@
         <hr>
 
         <div class="container">
-            <!--
+
             <h4 id="Education" class='text-center head1'>EDUCATION</h4>
 
             <dl>
-                <dt style='color:burlywood'> Bachelor of Technology in Information Technology</dt>
-                <dd>J.B. Institute of Engineering and Technology (JBIET), Hyderabad, India. GPA: 3.5/4.00 </dd>
+                <dt style='color:burlywood'> Masters in Applied Computer Science<span style="float:right">2015</span>
+                </dt>
+                <dd>Northwest Missouri State University, Missouri, USA. <span style="float:right">GPA: 3.55/4.00</span>
+                </dd>
+            </dl>
+            <dl>
+                <dt style='color:burlywood'> Bachelor of Technology in Information Technology<span
+                        style="float:right">2016</span></dt>
+                <dd>J.B. Institute of Engineering and Technology (JBIET), Hyderabad, India.<span
+                        style="float:right">GPA: 3.50/4.00</span> </dd>
             </dl>
 
--->
+
             <hr>
             <h4 id="Tech-skills" class='text-center head1'>TECHNICAL SKILLS</h4>
 
@@ -405,7 +207,7 @@
                             </dt>
                             <dd>
                                 <br>
-                                <ul>
+                                <ul class="job-duties">
                                     <li>Involved in the analysis, design, and development and testing phases of Software
                                         resulting in multiple stable releases and more efficient systems.</li>
                                     <li>Developed Dynamic and robust UI using&nbsp;<strong>MeteorJS, HTML, CSS,
@@ -475,7 +277,7 @@
                             </dt>
                             <dd>
                                 <br>
-                                <ul>
+                                <ul class="job-duties">
                                     <li>Used markup languages like <strong>HTML</strong> and <strong>JavaScript</strong>
                                         frameworks to create user-friendly
                                         web pages.</li>
@@ -503,7 +305,7 @@
                             </dt>
                             <dd>
                                 <br>
-                                <ul>
+                                <ul class="job-duties">
                                     <li>Responsible for helping build a web application of the company’s platform by
                                         leveraging technologies like <strong>HTML, CSS and JavaScript</strong></li>
                                     <li>Building <strong>responsive websites</strong> using advanced media queries.</li>
@@ -526,33 +328,6 @@
                 </div>
             </div>
 
-
-            <!-- <h4 id="Projects" class='text-center head1'>PROJECTS</h4> -->
-            <!-- <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
-                <a class="nav-link active" href="#project1" data-toggle="tab"> Project 4 </a>
-                <a class="nav-link" href="#project2" data-toggle="tab"> Project 3 </a>
-                <a class="nav-link" href="#project3" data-toggle="tab"> Project 2 </a>
-                <a class="nav-link" href="#project4" data-toggle="tab"> Project 1 </a>
-            </nav>
-            <div class="tab-content py-3">
-                <div class="tab-pane active" id="project1">
-
-                  
-                </div>
-                <div class="tab-pane" id="project2">
-                    
-                </div>
-
-                <div class="tab-pane" id="project3">
-                    
-                </div>
-                <div class="tab-pane" id="project4">
-
-                   
-                </div>
-            </div>
-        </div> -->
-
             <div class="footer my-5 py-3" style="display:block;border:solid lightgrey 1px;padding:15px">
                 <div class="row">
                     <div class="col-md-4"> Mobile Number :
@@ -565,7 +340,6 @@
                 </div>
             </div>
         </div>
-        <!-- jQuery first, then Tether, then Bootstrap JS. -->
         <script>
             function updateList() {
                 const list = document.getElementById("wire");
