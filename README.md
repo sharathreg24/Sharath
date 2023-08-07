@@ -1,3 +1,1 @@
-# Sharath Kumar
-
-# Personal Website
+# Sharath Kumar's Personal Website
