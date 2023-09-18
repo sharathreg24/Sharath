@@ -27,3 +27,18 @@ function updateList() {
 // Call the function on page load and whenever the window is resized
 window.addEventListener("load", updateList);
 window.addEventListener("resize", updateList);
+
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const body = document.body;
+
+darkModeToggle.addEventListener('click', () => {
+    body.classList.toggle('light-mode');
+
+    // const isDarkMode = body.classList.contains('light-mode');
+    // darkModeToggle.textContent = isDarkMode ? 'Dark Mode' : 'Light Mode';
+
+    const moonIcon = document.getElementById('moon-icon');
+    const sunIcon = document.getElementById('sun-icon');
+    moonIcon.classList.toggle('hidden');
+    sunIcon.classList.toggle('hidden');
+});
